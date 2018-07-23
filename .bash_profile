@@ -86,6 +86,7 @@ alias ph='echo -e ${PATH//:/\\n}'           # Echo human-readable PATH
 alias bb='bookbinder watch'
 alias gs='git status'
 alias gp='git pull'
+export BUILDPACK="https://github.com/cloudfoundry/ruby-buildpack#v1.6.28"
 
 # Git clone and cd
 gclone() {
