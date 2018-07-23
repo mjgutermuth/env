@@ -8,7 +8,7 @@ source ~/.private
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Path to the bash it configuration
-export BASH_IT="$HOME/workspace/env/.bash_it"
+export BASH_IT="$HOME/.bash_it"
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
@@ -73,13 +73,13 @@ alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'            # Go back 6 directory levels
 alias ~='cd ~'
 alias wk='cd ~/workspace'
-alias pcf='cd ~/workspace/docs-book-pivotalcf'
-alias oss='cd ~/workspace/docs-book-cloudfoundry'
-alias pws='cd ~/workspace/docs-book-runpivotal'
-alias tile='cd ~/workspace/docs-book-tiledev'
-alias pksb='cd ~/workspace/docs-book-pks && rvm use 2.3.0 && gp'
-alias pksc='cd ~/workspace/docs-pks && gp'
-alias cfcr='cd ~/workspace/docs-cfcr && gp'
+alias pcf='cd ~/workspace/docs-book-pivotalcf && gp && bb'
+alias oss='cd ~/workspace/docs-book-cloudfoundry && gp && bb'
+alias pws='cd ~/workspace/docs-book-runpivotal && gp && bb'
+alias tile='cd ~/workspace/docs-book-tiledev && gp && bb'
+alias pksb='cd ~/workspace/docs-book-pks && rvm use 2.3.0 && gp && bb'
+alias pksc='cd ~/workspace/docs-pks && gp && bb'
+alias cfcr='cd ~/workspace/docs-cfcr && gp && bb'
 
 # Shorthand
 alias ph='echo -e ${PATH//:/\\n}'           # Echo human-readable PATH
