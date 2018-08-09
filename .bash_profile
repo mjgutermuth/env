@@ -78,8 +78,8 @@ alias oss='cd ~/workspace/docs-book-cloudfoundry && gp && bb'
 alias pws='cd ~/workspace/docs-book-runpivotal && gp && bb'
 alias tile='cd ~/workspace/docs-book-tiledev && gp && bb'
 alias pksb='cd ~/workspace/docs-book-pks && rvm use 2.3.0 && gp && bb'
-alias pksc='cd ~/workspace/docs-pks && gp && bb'
-alias cfcr='cd ~/workspace/docs-cfcr && gp && bb'
+alias pksc='cd ~/workspace/docs-pks && gp'
+alias cfcr='cd ~/workspace/docs-cfcr && gp'
 
 # Shorthand
 alias ph='echo -e ${PATH//:/\\n}'           # Echo human-readable PATH
