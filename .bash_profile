@@ -97,6 +97,7 @@ gclone() {
 alias subl='open -a Sublime\ Text'          # open file in Sublime Text
 alias s='open -a Sublime\ Text .'           # open dir in Sublime Text
 alias gimp='open -a GIMP'                   # open file in GIMP
+alias atom='open -a Atom'                   # open file in Atom
 alias graf='open -a OmniGraffle'            # open file in OmniGraffle
 alias tc='tiny-care-terminal'               # opens Tiny Care Terminal dashboard
 
