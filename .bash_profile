@@ -14,21 +14,11 @@ export BASH_IT="$HOME/.bash_it"
 # location /.bash_it/themes/
 export BASH_IT_THEME='bobby'
 
-# (Advanced): Change this to the name of your remote repo if you
-# cloned bash-it with a remote other than origin such as `bash-it`.
-# export BASH_IT_REMOTE='bash-it'
-
 # Your place for hosting Git repos. I use this for private repos.
 export GIT_HOSTING='git@git.domain.com'
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
-
-# Change this to your console based IRC client of choice.
-export IRC_CLIENT='irssi'
-
-# Set this to the command you use for todo.txt-cli
-export TODO="t"
 
 # Set this to false to turn off version control status checking within the prompt for all themes
 export SCM_CHECK=true
@@ -42,7 +32,7 @@ export SCM_CHECK=true
 # https://github.com/djl/vcprompt
 #export VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt
 
-# (Advanced): Uncomment this to make Bash-it reload itself automatically
+# Uncomment this to make Bash-it reload itself automatically
 # after enabling or disabling aliases, plugins, and completions.
 # export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
 
@@ -74,7 +64,7 @@ alias .6='cd ../../../../../../'            # Go back 6 directory levels
 alias ~='cd ~'
 alias wk='cd ~/workspace'
 alias pcf='cd ~/workspace/docs-book-pivotalcf && gp && bb'
-alias oss='cd ~/workspace/docs-book-cloudfoundry && gp && bb'
+alias oss='cd ~/workspace/docs-book-cloudfoundry && gp && rvm use 2.3.0 && bb'
 alias pws='cd ~/workspace/docs-book-runpivotal && gp && bb'
 alias tile='cd ~/workspace/docs-book-tiledev && gp && bb'
 alias pksb='cd ~/workspace/docs-book-pks && rvm use 2.3.0 && gp && bb'
