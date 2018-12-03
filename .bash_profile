@@ -106,8 +106,12 @@ alias bordify='ruby ~/workspace/docs-utility-scripts/bordify/bordify.rb'
 alias brunch='ruby ~/workspace/brunch/brunch.rb'
 alias pullall='ruby ~/workspace/docs-utility-scripts/updater/updater.rb'
 
+# Fix my camera
+alias camfix='sudo killall VDCAssistant && sudo killall AppleCameraAssistant'
+
 # WTF is wrong with python
 alias pip='/usr/local/bin/pip2'
 
 # Shell command completion for gcloud
 if [ -f '/usr/local/bin/google-cloud-sdk/completion.bash.inc' ]; then source '/usr/local/bin/google-cloud-sdk/completion.bash.inc'; fi
+
