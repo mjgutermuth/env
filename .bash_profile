@@ -75,7 +75,7 @@ alias cfcr='cd ~/workspace/docs-cfcr && gp'
 alias ph='echo -e ${PATH//:/\\n}'           # Echo human-readable PATH
 alias bb='bookbinder watch'
 alias gs='git status'
-alias gp='git pull'
+alias gp='git pull; ack "<<<"; ack ">>>"'
 export BUILDPACK="https://github.com/cloudfoundry/ruby-buildpack#v1.6.28"
 
 # Git clone and cd
@@ -115,3 +115,4 @@ alias pip='/usr/local/bin/pip2'
 # Shell command completion for gcloud
 if [ -f '/usr/local/bin/google-cloud-sdk/completion.bash.inc' ]; then source '/usr/local/bin/google-cloud-sdk/completion.bash.inc'; fi
 
+export PATH="$HOME/.cargo/bin:$PATH"
