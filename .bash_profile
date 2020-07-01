@@ -70,3 +70,18 @@ alias ll='ls -FGlAhp' 	                    # classify, no group names, long list
 alias cp='cp -iv'                           # prompt before overwrite, verbose
 alias mv='mv -iv'                           # prompt before overwrite, verbose
 alias mkdir='mkdir -pv'                     # no error if existing, make parent dirs if needed, verbose
+
+# Toolsmiths pooled environments - API token stored in ~/.private
+alias gimme-2.7='curl -X POST "https://environments.toolsmiths.cf-app.com/pooled_gcp_engineering_environments/claim?api_token=$TOOLSMITHS_API_TOKEN&pool_name=us_2_7&notes=claimed%20by%20melinda"'
+alias gimme-2.8='curl -X POST "https://environments.toolsmiths.cf-app.com/pooled_gcp_engineering_environments/claim?api_token=$TOOLSMITHS_API_TOKEN&pool_name=us_2_8&notes=claimed%20by%20melinda"'
+alias gimme-2.9='curl -X POST "https://environments.toolsmiths.cf-app.com/pooled_gcp_engineering_environments/claim?api_token=$TOOLSMITHS_API_TOKEN&pool_name=us_2_9&notes=claimed%20by%20melinda"'
+alias gimme-2.10='curl -X POST "https://environments.toolsmiths.cf-app.com/pooled_gcp_engineering_environments/claim?api_token=$TOOLSMITHS_API_TOKEN&pool_name=us_2_10&notes=claimed%20by%20melinda"'
+
+# Tiny Care Terminal
+alias tc='tiny-care-terminal'               # opens Tiny Care Terminal dashboard
+export TTC_BOTS='tinycarebot,selfcare_bot,dog_feelings'
+export TTC_REPOS='~/workspace'
+export TTC_WEATHER='Boston'
+export TTC_CELSIUS=true
+export TTC_APIKEYS=false
+export TTC_UPDATE_INTERVAL=20
