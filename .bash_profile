@@ -37,6 +37,7 @@ update_style () {
   cd ~/.atom/packages/html-special-character-replacer/lib
   cp ~/workspace/docs-utility-scripts/style-checker/html-special-character-replacer.js .
   echo "Style Checker updated."
+  cd ~/workspace
 }
 
 # Shorthand
