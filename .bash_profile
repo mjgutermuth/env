@@ -42,18 +42,29 @@ update_style () {
 
 # Shorthand
 alias ph='echo -e ${PATH//:/\\n}'           # Echo human-readable PATH
-alias bb='bundle exec bookbinder watch'
+alias bb='rvm use 2.3.0 && bundle exec bookbinder watch'
 alias gs='git status'
 alias gp='git pull; ack "<<<<"; ack ">>>>"'
 alias gimp='open -a GIMP'                   # open file in GIMP
 alias bbedge='BOOKBINDER_EDGE=true'         # shorthand for updating pipelines
 
-# Fix bookbinder gems
-bbgems () {
-  rm Gemfile*
+# Fix bookbinder gems for bookbinding
+gembind () {
+  rm Gemfile
+  rm Gemfile.lock
   cp ~/Documents/a\ working\ Gemfile Gemfile
   cp ~/Documents/a\ working\ Gemfile.lock Gemfile.lock
   bundle install
+}
+
+# Fix bookbinder gems for watching
+gemwatch () {
+  echo "source 'http://rubygems.org'
+gem 'therubyracer'
+gem 'bookbindery', '9.12.1'
+gem 'rake'
+gem 'jasmine'
+gem 'font-awesome-sass', '4.7.0'" > Gemfile
 }
 
 # Navigation shortcuts
